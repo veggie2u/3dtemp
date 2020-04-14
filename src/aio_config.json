@@ -1,0 +1,4 @@
+{
+  "aioKey": "your adafruit IO key",
+  "feedUrl": "the url of your feed group"
+}
