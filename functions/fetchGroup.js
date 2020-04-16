@@ -1,7 +1,6 @@
 /**
  * Netlify function that returns feeds from a group from AIO
  */
-import fetch from "node-fetch";
 const { AIO_KEY, AIO_URL } = process.env;
 
 exports.handler = async (event, context) => {
