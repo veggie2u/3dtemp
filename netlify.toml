@@ -1,0 +1,13 @@
+[build]
+  # your build directory
+  publish = "build"
+  # your build command
+  command = "yarn build"
+  # your functions directory
+  functions = "functions"
+
+# SPA rule. Always redirect any request to our index.html
+[[redirects]]
+  from    = "/*"
+  to      = "/index.html"
+  status  = 200
