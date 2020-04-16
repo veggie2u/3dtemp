@@ -1,3 +1,5 @@
+import fetch from "node-fetch";
+
 /**
  * Netlify function that returns feeds from a group from AIO
  */
