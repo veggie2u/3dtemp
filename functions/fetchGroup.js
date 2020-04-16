@@ -1,5 +1,6 @@
-import fetch from "node-fetch";
+// import fetch from "node-fetch";
 
+const fetch = require('node-fetch');
 /**
  * Netlify function that returns feeds from a group from AIO
  */
