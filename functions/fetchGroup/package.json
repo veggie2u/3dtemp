@@ -1,8 +1,0 @@
-{
-  "name": "3d-temp",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "node-fetch": "^2.6.0"
-  }
-}
