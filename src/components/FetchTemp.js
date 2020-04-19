@@ -32,9 +32,6 @@ const Fetch = () => {
       ))}
       </tbody>
     </table>
-    
-      
-    
   );
 };
 

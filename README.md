@@ -3,6 +3,17 @@ This needs work.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## ENV Variables
+
+You will need two environment variables.
+
+AIO_KEY=your adafruit io key change
+AIO_URL=your adafruit group url
+
+These can be placed in an .env file but you should not commit this to git.
+The better way is to set these environment variables on netlify.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
