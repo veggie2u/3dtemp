@@ -23,9 +23,9 @@ const useStyles = makeStyles({
   }
 });
 
-const TempCard = () => {
+const TempCard = (props) => {
   const classes = useStyles();
-
+  console.log(props.feed);
   return (
     <Card className={classes.root}>
       <CardHeader
@@ -39,7 +39,7 @@ const TempCard = () => {
             <NotificationImportant color="secondary"/>
           </IconButton>
         }
-        title="Filament Box 3"
+        title={props.feed.name}
         subheader="Recorded @ 2020/04/16 12:00"
       />
       <CardMedia
@@ -54,7 +54,7 @@ const TempCard = () => {
           <Box display="flex" alignItems="center">
             <Box flexGrow={1} justifyContent="flex-start">
               <Typography variant="h4" color="textSecondary" component="span">
-                23.2
+                {props.feed.last_value}
               </Typography>
               <Typography variant="h6" color="textSecondary" component="span">
                 &nbsp;C
@@ -65,10 +65,10 @@ const TempCard = () => {
             </Box>
             <Box flexGrow={1} justifyContent="flex-end">
               <Typography variant="h4" color="textSecondary" component="span">
-                40.0
+                {props.feed.last_value}
               </Typography>
               <Typography variant="h6" color="textSecondary" component="span">
-                &nbsp;Hpa
+                &nbsp;Rh
               </Typography>
             </Box>
           </Box>

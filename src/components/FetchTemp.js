@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { parseISO, format } from 'date-fns';
+import Grid from "@material-ui/core/Grid";
 import TempCard from "./TempCard";
 
 const Fetch = () => {
@@ -18,10 +19,13 @@ const Fetch = () => {
   }, []);
   return (
     <React.Fragment>
-      {data.feeds.map(feed => (
-        <TempCard />
-      ))}
-    
+      <Grid container justify="center" spacing={3}>
+        {data.feeds.map(feed => (
+          <Grid item auto>
+            <TempCard feed={feed}/>
+          </Grid>
+        ))}
+      </Grid>
       <table>
         <tbody>
         {data.feeds.map(feed => (
