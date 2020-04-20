@@ -5,7 +5,7 @@ const feed = {
   id: "02",
   name: "Humidity 1",
   last_value: "23.0",
-  created_at: "2020-04-7T01:08:16Z"
+  updated_at: "2020-04-07T01:08:16Z"
 };
 
 const FakeTempCard = () => {

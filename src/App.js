@@ -25,7 +25,7 @@ function App() {
         <header>
           <NavBar />
         </header>
-        <Container maxWidth="false" className={classes.root}>
+        <Container maxWidth={false} className={classes.root}>
           <Switch>
             <Route path="/" exact component={Splash} />
             <PrivateRoute path="/profile" component={Profile} />

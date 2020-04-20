@@ -12,6 +12,7 @@ const Fetch = () => {
     const fetchData = async () => {
       let res = await fetch(url);
       let response = await res.json();
+      console.log(response);
       setData(response);
     };
     fetchData();
@@ -21,8 +22,8 @@ const Fetch = () => {
     <React.Fragment>
       <Grid container justify="center" spacing={3}>
         {data.feeds.map(feed => (
-          <Grid item auto>
-            <TempCard feed={feed}/>
+          <Grid item key={feed.id}>
+            <TempCard feed={feed} />
           </Grid>
         ))}
       </Grid>

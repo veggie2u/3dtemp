@@ -1,4 +1,5 @@
 import React from 'react';
+import { parseISO, format } from 'date-fns';
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 import Card from '@material-ui/core/Card';
@@ -40,7 +41,7 @@ const TempCard = (props) => {
           </IconButton>
         }
         title={props.feed.name}
-        subheader="Recorded @ 2020/04/16 12:00"
+        subheader={`Recorded @ ${format(parseISO(props.feed.updated_at), 'MM/dd hh:mm a')}`}
       />
       <CardMedia
         component="img"
