@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
-import TempCard from "./TempCard"
+import FakeTempCard from "./FakeTempCard"
 
 const Splash = () => {
   return (
     <Fragment>
       <h1>3D Temp</h1>
-      <TempCard />
+      <FakeTempCard />
     </Fragment>
   );
 };
