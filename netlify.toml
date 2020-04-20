@@ -4,7 +4,7 @@
   # your build command
   command = "yarn build"
   # your functions directory
-  functions = "functions"
+  functions = "src/functions"
 
 [[redirects]]
   from    = "/api/*"
