@@ -43,7 +43,7 @@ def sendData(id, sensorData):
         except ThrottlingError: 
             print("oops, reached max data for this minute")
 
-aio = Client('veggie2u', '88488a067348a38ff32fb5078277758d3556295e')
+aio = Client('xxxx', 'xxxx')
 
 while True:
     for sensor in sensorsConfig:
